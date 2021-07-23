@@ -17,7 +17,6 @@ router.get('/books/:id', (req, res) => {
 
 router.post('/books', (req, res) => {
     const name = req.body
-    const keep_name = "Name is : "+name
     books.push(req.body)
     res.status(201).json(req.body)
 })
